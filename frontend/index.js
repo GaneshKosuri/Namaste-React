@@ -12,23 +12,3 @@ root.render(heading)
 // JSX code transpiled in to JS before it goes to JSEngine => Job is Done by PARCEL (it uses Babel)
 const jsxHeading = <h1 id="heading">Hello Ganesh Kosuri</h1>
 root.render(jsxHeading)
-
-
-const name = "Ganesh Kosuri"
-
-const HeadingComponent = () => {
-    return <h1 id="heading">Hello {name}, it is a functional component</h1>
-}
-
-const title = <h1>Functional Component</h1>
-
-const MyFirstComponent = () => {
-    return (
-        <div>
-            {title}
-            <HeadingComponent />
-        </div>
-    )
-}
-
-root.render(<MyFirstComponent />)
